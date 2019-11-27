@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-bar {
+  height: 5%;
+  width: 90%;
+  background: #454545;
+  color: #858585;
+  padding: 0.3%;
+}
+
+.navigation-bar li:first-of-type {
+  margin-left: 20%;
+}
+
+.navigation-bar li:first-of-type:hover {
+  background-color: #454545;
+}
+
+.navigation-bar .active {
+  background-color: #292929;
+  color: #c1c1c1;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  display: inline-block;
+  height: 100%;
+  margin-left: 0.5%;
+  font-size: 100%;
+  padding: 0 1%;
+  cursor: pointer;
+}
+
+.navigation-bar li:hover {
+  background-color: #292929;
+}
+
+.navigation-bar li a {
+  color: #858585;
+  text-decoration: none;
+}
+
+#client-form {
+  background: url("background.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#client-form #client-data-form {
+  position: relative;
+  top: 30%;
+  height: 30%;
+  width: 30%;
+  padding: 2%;
+  border: 2px solid #404040;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #5f5f5f;
+  font-weight: bold;
+  color: #313131;
+  overflow: hidden;
+  -webkit-animation-name: client-form-animate;
+          animation-name: client-form-animate;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#client-form #client-data-form p {
+  text-align: center;
+}
+
+#client-form #client-data-form input {
+  float: right;
+  outline: none;
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #404040;
+  text-align: center;
+  color: #313131;
+}
+
+#client-form #client-data-form #client-submit-btn {
+  width: 50%;
+  margin-top: 5%;
+  background: #247482;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+#client-form #client-data-form #client-submit-btn:disabled {
+  background: #7c7c7c;
+  color: #939393;
+}
+
+@-webkit-keyframes client-form-animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes client-form-animate {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+#homePHP {
+  text-align: center;
+  padding: 5%;
+  overflow: hidden;
+}
+
+#homePHP a {
+  text-decoration: none;
+}
+
+#homePHP h1 {
+  font-size: 50px;
+}
+
+#homePHP p {
+  font-size: 20px;
+}
+
+#signinPHP {
+  color: #6f6f6f;
+  padding-left: 5%;
+  overflow: hidden;
+}
+
+#signinPHP p:first-of-type {
+  font-size: 30px;
+}
+
+#signinPHP table {
+  width: 40%;
+}
+
+#signinPHP table td {
+  display: block;
+  margin: 1%;
+  font-weight: bold;
+}
+
+#signinPHP table td input {
+  width: 100%;
+  outline: none;
+  text-indent: 20px;
+}
+
+#signinPHP table td label {
+  cursor: pointer;
+}
+
+#signinPHP table td label input[type='checkbox'] {
+  width: 3%;
+}
+
+#signinPHP table td a {
+  font-size: 15px;
+  color: #298e9a;
+  float: right;
+  margin-top: -5%;
+}
+
+#signinPHP table td button {
+  border: 2px solid #296ca3;
+  outline: none;
+  width: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #296ca3;
+  width: 100%;
+  padding: 5px;
+}
+
+#signupPHP {
+  color: #6f6f6f;
+  padding-left: 5%;
+  overflow: hidden;
+}
+
+#signupPHP p:first-of-type {
+  font-size: 30px;
+}
+
+#signupPHP table {
+  width: 40%;
+}
+
+#signupPHP table td {
+  display: block;
+  margin: 1%;
+  font-weight: bold;
+}
+
+#signupPHP table td input {
+  width: 100%;
+  outline: none;
+  text-indent: 20px;
+}
+
+#signupPHP table td button {
+  border: 2px solid #296ca3;
+  outline: none;
+  width: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #296ca3;
+  width: 100%;
+  padding: 5px;
+}
+
+#forgot_passwordPHP {
+  color: #6f6f6f;
+  padding-left: 5%;
+  overflow: hidden;
+}
+
+#forgot_passwordPHP p:first-of-type {
+  font-size: 30px;
+}
+
+#forgot_passwordPHP table {
+  width: 40%;
+}
+
+#forgot_passwordPHP table td {
+  display: block;
+  margin: 1%;
+  font-weight: bold;
+}
+
+#forgot_passwordPHP table td input {
+  width: 100%;
+  outline: none;
+  text-indent: 20px;
+}
+
+#forgot_passwordPHP table td button {
+  border: 2px solid #296ca3;
+  outline: none;
+  width: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #296ca3;
+  width: 100%;
+  padding: 5px;
+}
+/*# sourceMappingURL=style.css.map */

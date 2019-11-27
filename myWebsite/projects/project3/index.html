@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do List</title>
+		<meta charset="utf-8" />
+		<!--CSS-->
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<!--Babel-->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js'></script>
+		<!--JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--SweetAlert-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!--AngularJS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<h2>SET YOUR GOALS</h2>
+			<form id='form'>
+				<input type='text' id='inputText' name='inputText' placeholder="New Task" autocomplete="off">
+				<button type='button' class='button' id='addTask' name='addTask'>ADD</button>
+				<button type='button' class='button' id='clearTask' name='clearTask' onclick=''>CLEAR</button>
+				<button type='button' class='button' id='showHideTask' name='showHideTask'>HIDE</button>
+				
+			</form>
+			<input type='text' placeholder=' Search...' id='searchBtn' onkeyup="" autocomplete="none">
+		</header>
+		<main>
+			<ul class='list'>
+				
+			</ul>
+		</main>
+	<!--JavaScript-->
+	<script type='text/JavaScript' src='script.js'> </script>
+	</body>
+</html>
+

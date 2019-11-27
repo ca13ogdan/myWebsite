@@ -1,0 +1,120 @@
+html, body{
+    margin:0;
+    padding:0;
+    background-color:#b5b5b5;
+}
+
+.gallery{
+    padding:1%;
+    display:flex;
+    flex-wrap:wrap;
+    
+    .slide{ 
+        margin:5px auto;
+        position:relative;
+        cursor:pointer;
+        &:hover{
+            img{
+                transform:scale(1.1, 1.1);   
+                opacity:0.4;  
+            }
+            .slide-text{
+                transform:scale(1.8);
+                font-size:20px;
+            }
+        }
+        img{        
+            height:150px;
+            width:150px;
+            transition:0.3s ease;
+        } 
+        p.slide-text{
+            position:absolute;
+            color:#176f99;
+            font-weight:bold;
+            top:30%;
+            left:30%;
+            transition: 0.3s; 
+            font-size:0px;         
+        }
+    }
+        
+}
+.slider{
+    display:none;
+    position:absolute;
+    top:0;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(0,0,0, 0.9);
+    
+
+    .slider-view{
+        position:absolute;
+        height:70%;
+        width:50%;
+        top:20%;
+        left:25%;
+        border:1px solid grey;
+        overflow:hidden;
+       
+        
+        .dots{
+            position:absolute;
+            top:80%;
+            left:10%;
+            background-color:#59aac1;
+            padding:3px;
+            border-radius:4px;
+
+            input[type='radio']{
+                cursor:pointer;         
+            }
+       
+        }  
+    }
+    .fa{
+        font-size:150px;
+        position:absolute;
+        top:40%;
+        cursor:pointer;
+        transition:.2s;
+        color:#176f99;
+
+        &:hover{
+            transform:scale(1.2);
+        }
+        &:nth-child(2){
+            left:1%;
+        }
+        &:nth-child(3){
+            right:1%;
+        }
+        &:nth-child(4){
+            top:15%;
+            left:75%;
+            font-size:20px;
+        }     
+    }
+    .slide-number{
+        position:absolute;
+        bottom:1%;
+        left:25%;
+        font-weight:bold;
+        color:#939393;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .slider{
+      .fa{
+          font-size:75px;
+      }
+      .slider-view .dots{
+          height:15%;
+          width:100%;
+          left:0px;
+      }
+     
+    }
+}
